@@ -6,13 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="style.css">
     <title>Color Gradient</title>
 </head>
-<body>
+<body onload="randomColors()">
     <div id="colors">
-        <div id="color1"></div>
-        <div id="color2"></div>
+        <div id="color1">
+            <p id="colorText1">#00CCFF</p>
+        </div>
+        <div id="color2">
+            <p id="colorText2">#FF0066</p>
+        </div>
     </div>
 
     <div id="gradient"></div>
