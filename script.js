@@ -1,12 +1,25 @@
+var next = document.getElementById("next");
+
+next.addEventListener("click", () => {
+    document.getElementById("tutorial").style.opacity = 0;
+    setTimeout(() => {document.getElementById("tutorial").remove()}, 250);
+});
+
+
+
 var gradient = document.getElementById("gradient");
 var div1 = document.getElementById("color1");
 var div2 = document.getElementById("color2");
 var text1 = document.getElementById("colorText1");
 var text2 = document.getElementById("colorText2");
 
+var copy = document.getElementById("text");
+
 var yes = document.getElementById("yes");
 var kinda = document.getElementById("kinda");
 var no = document.getElementById("no");
+
+
 
 function randomColors() {
     let color1Nums = chColor1();
@@ -36,6 +49,19 @@ function chColor2() {
     return [num1, num2, num3];
 }
 
+
+
 yes.addEventListener("click", randomColors);
 kinda.addEventListener("click", randomColors);
 no.addEventListener("click", randomColors);
+
+
+
+// copy.addEventListener("mouseover", () => {
+//     let container = document.getElementById("controls");
+//     let ;
+//     container.appendChild();
+// });
+
+// copy.addEventListener("mouseout", () => {
+// });
