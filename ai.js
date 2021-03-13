@@ -12,9 +12,10 @@ var train = [
 network.train(train);
 
 var input = {}
+var tries = 50;
 
 function getInputColors() {
-    for (let i = 0; i < 20; ++i) {
+    for (let i = 0; i <= tries; ++i) {
         colors = randomColors();
         input = {
             r1: colors[0][0]/255,
@@ -29,10 +30,11 @@ function getInputColors() {
         console.log(`Confidence Value: ${result.show}`);
 
         if (result.show < 0.5) {
-            if (i < 19) {
+            if (i < tries) {
                 continue;
             }
             else {
+                console.log("exceded tries");
                 break;
             }
         }
