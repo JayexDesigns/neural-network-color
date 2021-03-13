@@ -18,16 +18,21 @@
 
     <div id="colors">
         <div id="color1">
-            <p id="colorText1">#00CCFF</p>
+            <p id="colorText1"></p>
         </div>
         <div id="color2">
-            <p id="colorText2">#FF0066</p>
+            <p id="colorText2"></p>
         </div>
     </div>
 
     <div id="gradient"></div>
 
     <div id="controls">
+        <svg width="100" height="50">
+            <polyline points="1,1 99,1 99,39 60,39 50,49 40,39 1,39"/>
+        </svg>
+        <p id="copy">Copy?</p>
+
         <p id="text">Do you like this color combination?</p>
         <div id="buttons">
             <button id="yes">YES</button>
@@ -35,6 +40,8 @@
             <button id="no">NO</button>
         </div>
     </div>
+
+    <input type="text" id="copyText"></input>
 
     <script src="script.js"></script>
 </body>
