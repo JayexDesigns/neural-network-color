@@ -16,10 +16,6 @@ var copyText = document.getElementById("copyText");
 
 var copy = document.getElementById("text");
 
-var yes = document.getElementById("yes");
-var kinda = document.getElementById("kinda");
-var no = document.getElementById("no");
-
 
 
 function randomColors() {
@@ -35,27 +31,22 @@ function randomColors() {
     text1.innerText = `#${color1Nums[0].toString(16)}${color1Nums[1].toString(16)}${color1Nums[2].toString(16)}`;
     text2.innerText = `#${color2Nums[0].toString(16)}${color2Nums[1].toString(16)}${color2Nums[2].toString(16)}`;
     copyText.value = `${text1.innerText},${text2.innerText}`
+    return [color1Nums, color2Nums];
 }
 
 function chColor1() {
-    var num1 = Math.floor(Math.random() * (190 - 20) + 20);
-    var num2 = Math.floor(Math.random() * (190 - 20) + 20);
-    var num3 = Math.floor(Math.random() * (190 - 20) + 20);
-    return [num1, num2, num3];
+    let red1 = Math.floor(Math.random() * (190 - 20) + 20);
+    let green1 = Math.floor(Math.random() * (190 - 20) + 20);
+    let blue1 = Math.floor(Math.random() * (190 - 20) + 20);
+    return [red1, green1, blue1];
 }
 
 function chColor2() {
-    var num1 = Math.floor(Math.random() * (190 - 20) + 20);
-    var num2 = Math.floor(Math.random() * (190 - 20) + 20);
-    var num3 = Math.floor(Math.random() * (190 - 20) + 20);
-    return [num1, num2, num3];
+    let red2 = Math.floor(Math.random() * (190 - 20) + 20);
+    let green2 = Math.floor(Math.random() * (190 - 20) + 20);
+    let blue2 = Math.floor(Math.random() * (190 - 20) + 20);
+    return [red2, green2, blue2];
 }
-
-
-
-yes.addEventListener("click", randomColors);
-kinda.addEventListener("click", randomColors);
-no.addEventListener("click", randomColors);
 
 
 
