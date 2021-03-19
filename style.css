@@ -9,6 +9,8 @@ body {
     background-color: #1a1a1a;
 }
 
+
+
 #tutorial {
     background-color: rgba(0, 0, 0, 0.9);
     z-index: 1;
@@ -38,7 +40,6 @@ body {
     transform: translate(-50%, -50%);
     color: rgba(255, 255, 255, 1);
     background-color: rgba(255, 255, 255, 0);
-    font-family: 'Open Sans', sans-serif;
     font-size: 2vh;
     font-weight: 700;
     letter-spacing: 0.5vh;
@@ -72,10 +73,14 @@ body {
     font-weight: 700;
 }
 
+
+
 #gradient {
     width: 100vw;
     height: 40vh;
 }
+
+
 
 #controls {
     height: 20vh;
@@ -130,7 +135,6 @@ body {
 #buttons button {
     color: rgba(255, 255, 255, 1);
     background-color: rgba(255, 255, 255, 0);
-    font-family: 'Open Sans', sans-serif;
     font-size: 2vh;
     font-weight: 700;
     letter-spacing: 0.5vh;
@@ -154,4 +158,31 @@ body {
     transform: translate(-50%, -50%);
     color: #1a1a1a;
     opacity: 0;
+}
+
+
+
+@media (max-width: 1025px) {
+    #tutorial button {
+        top: 30%;
+    }
+}
+
+@media (max-width: 575px) {
+    #tutorial button {
+        top: 25%;
+    }
+}
+
+@media (max-width: 450px) {
+    #tutorial p {
+        font-size: 2.2vh;
+    }
+
+    #tutorial button {
+        top: 20%;
+        font-size: 2vh;
+        letter-spacing: 0.3vh;
+        padding: 0.5vh 2vh 0.5vh 2.5vh;
+    }
 }
