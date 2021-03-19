@@ -166,11 +166,47 @@ body {
     #tutorial button {
         top: 30%;
     }
+
+    #colors div {
+        height: 30vh;
+    }
+
+    #gradient {
+        height: 30vh;
+    }
+
+    #controls svg {
+        top: 60.5%;
+    }
+
+    #copy {
+        top: 60%;
+    }
+
+    #buttons {
+        top: 75%;
+    }
+
+    #buttons button {
+        display: block;
+        margin: 3vh 0 0 0;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
 }
 
 @media (max-width: 575px) {
     #tutorial button {
         top: 25%;
+    }
+
+    #text {
+        font-size: 3.8vw;
+    }
+
+    #buttons button {
+        font-size: 3.5vw;
     }
 }
 
