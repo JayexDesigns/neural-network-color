@@ -57,6 +57,22 @@ body {
 
 
 
+#github img {
+    height: 5vh;
+    position: absolute;
+    padding: 2vh;
+    opacity: 0.2;
+    transition: opacity .25s ease-in-out, color .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out, color .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out, color .25s ease-in-out;
+}
+
+#github img:hover {
+    opacity: 0.5;
+}
+
+
+
 #colors div {
     display: table-cell;
     width: 50vw;
