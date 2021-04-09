@@ -1,4 +1,4 @@
-<h3 align="center"><img src='https://github.com/JayexDesigns/neural-network-color/blob/main/img/favicon.png' width='15%'></h3>
+<h3 align="center"><img src='https://raw.githubusercontent.com/JayexDesigns/neural-network-color/main/img/favicon.png' width='15%'></h3>
 <h1 align="center">Neural Network Color Gradient</h1>
 <p align="center">This is a neural network that will show you color gradients that you might like</p>
 <br/>
